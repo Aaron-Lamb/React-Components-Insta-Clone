@@ -5,6 +5,9 @@ import Comment from "./Comment";
 import "./Comment.css";
 import dummyData from '../../dummy-data';
 
+dummyData.map((CommentsData) => {
+  console.log(CommentsData);
+})
 
 const CommentSection = props => {
   // Add state for the comments
