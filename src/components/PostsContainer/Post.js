@@ -10,7 +10,7 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
 
-  const [likestate, setLikeState] = useState(0);
+  const [likestate, setLikeState] = useState(props.post.likes);
 
   const update = () => {
     return setLikeState(likestate + 1);
