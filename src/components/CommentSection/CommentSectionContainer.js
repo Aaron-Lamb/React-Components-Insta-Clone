@@ -16,10 +16,9 @@ const CommentSection = props => {
   return (
     <div>
       {/* map through the comments data and return the Comment component */}
-      {dummyData.map((CommentsData) => {
-        setComment(Comments = CommentsData);
-       return <Comment username={Comments.comments.username} text={Comments.comments.text}/>
-      })}
+      {/* {dummyData.map((CommentsData) => {
+       return <Comment props={CommentsData}/>
+      })} */}
       <CommentInput />
     </div>
   );
